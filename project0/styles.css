@@ -30,8 +30,8 @@
   width: 470px;
   border: none;
   height: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
 }
 .search_container #search_bar input:focus {
   outline: none;
@@ -42,6 +42,23 @@
 .search_container #buttons {
   text-align: center;
   margin-top: 20px;
+}
+.search_container #buttons button {
+  width: 130px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  font-family: arial, helvetica, sans-serif;
+}
+.search_container #buttons button:hover {
+  border: 1px solid gainsboro;
+  box-shadow: 0px 1px 3px 1px gainsboro;
+}
+.search_container #buttons button:focus {
+  outline: none;
+  border: 1px solid gray;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
