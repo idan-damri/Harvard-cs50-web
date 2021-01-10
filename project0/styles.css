@@ -1,64 +1,47 @@
-.search_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-}
-
 .aside {
+  margin: 20px;
   text-align: right;
-  padding: 10px;
 }
-
 .aside a {
+  margin: 10px;
   text-decoration: none;
-  color: darkgray;
-}
-
-.aside a:hover {
   color: gray;
 }
+.aside a:hover {
+  text-decoration: underline;
+}
 
-.bar {
-  width: 475px;
-  border-radius: 30px;
-  border: 1px solid #dcdcdc;
+.search_container {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search_container #search_bar {
+  display: table-cell;
   text-align: center;
-}
-
-.bar:hover {
-  box-shadow: 1px 1px 8px 1px #dcdcdc;
-}
-
-.search_bar {
+  vertical-align: middle;
+  width: 500px;
   height: 40px;
-  width: 400px;
+  border: 1px solid #e0e2e6;
+  border-radius: 30px;
+}
+.search_container #search_bar input {
+  width: 470px;
   border: none;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+.search_container #search_bar input:focus {
   outline: none;
 }
-
-.bar:focus-within {
-  box-shadow: 1px 1px 8px 1px #dcdcdc;
-  outline: none;
+.search_container #search_bar:hover, .search_container #search_bar:focus-within {
+  box-shadow: 2px 2px 8px 1px #e0e2e6;
 }
-
-#buttons {
-  margin: 20px;
+.search_container #buttons {
   text-align: center;
-}
-
-#buttons input {
-  margin: 5px;
-  text-align: center;
-}
-
-#buttons input:hover {
-  box-shadow: 1px 1px 8px #dcdcdc;
-}
-
-#buttons input:focus {
-  box-shadow: 1px 1px 8px gray;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

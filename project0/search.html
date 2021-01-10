@@ -4,27 +4,23 @@
 <head>
     <title>Search</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
 </head>
 
 <body>
 
     <div class="aside">
-        <a href="search_image.html">search image</a>
-        &nbsp;
-        <a href="advance_search.html">advance search</a>
-        &nbsp;
+        <a href="search_image.html">Search Images</a>
+        <a href="advance_search.html">Advance Search</a>
     </div>
-
     <div class="search_container">
         <form action="https://google.com/search">
-            <div class="bar">
-                <input class="search_bar" type="text" name="q">
+            <div id="search_bar">
+                <input type="text" name="q" autofocus="autofocus">
             </div>
             <div id="buttons">
-                <input type="submit" value="Google Search" class="btn btn-light">
-                <input type="submit" value="I'm feeling lucky" class="btn btn-light">
+                <button type="submit" name="btnK">Google Search</button>
+                <button type="submit" name="btnI">I'm Feeling Lucky</button>
             </div>
         </form>
     </div>
