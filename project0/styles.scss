@@ -12,6 +12,7 @@ $fonts:arial, helvetica, sans-serif;;
     margin: 10px;
     text-decoration: none;
     color: gray;
+    font-family: $fonts;
   }
 
   a:hover{
@@ -32,14 +33,13 @@ $fonts:arial, helvetica, sans-serif;;
     height: 40px; 
     border: 1px solid $search_bar_color;
     border-radius: 30px;
-
-    input{
-      width: 470px;
+    
+    /* generic search  */
+    %gsearch{
+      height: 25px;
       border: none;
-      height: 30px;
       font-family: $fonts;
       font-size: 1em;
-      
     
     }
     input:focus{
@@ -47,13 +47,25 @@ $fonts:arial, helvetica, sans-serif;;
     }
     
   }
+  /* regular search */
+  .rsearch{
+    @extend %gsearch;
+    width: 470px;
+   
+  }
+/* image search */
+  .isearch{
+    @extend %gsearch;
+    width: 430px;
+  }
   #search_bar:hover, #search_bar:focus-within{
-    box-shadow: 2px 2px 8px 1px $search_bar_color;;
+    box-shadow: 2px 2px 8px 1px $search_bar_color;
+   
   }
   
   #buttons{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 
     button{
       width: 130px;
@@ -75,6 +87,16 @@ $fonts:arial, helvetica, sans-serif;;
     }
    
     
+  }
+
+  #search_btn{
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    cursor: pointer ;
+    vertical-align: middle;
   }
 
 }
